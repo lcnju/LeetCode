@@ -31,3 +31,9 @@ WHERE Salary < (
     SELECT MAX(Salary)
     FROM Employee
 );
+
+# this solution don't have null answer
+SELECT Salary
+FROM Employee
+ORDER BY Salary DESC
+LIMIT 1,1;
