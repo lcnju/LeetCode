@@ -26,7 +26,6 @@ public class Solution {
     	if (num < 0) {
     		return null;
     	}
-    	
     	int[] bits = new int[num + 1];
     	for (int i = 1; i < bits.length; i++) {
     		bits[i] = bits[i >> 1] + (i & 1);
